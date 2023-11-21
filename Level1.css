@@ -157,7 +157,9 @@ h2{
     }
     
     .container{
+        margin-top: 100px;
         position: relative;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -165,15 +167,14 @@ h2{
         gap: 30px;
         background-color: #A57DF9;
         padding: 40px 60px;
-        width: 564px;
-        margin-left: 20px;
+        width: 555px;
     }
     
     
     
     .reset{
         padding: 15px 20px;
-        
+        margin-left: 70px;
         
         
         border-radius: 15px;
@@ -218,7 +219,7 @@ h2{
             margin-top: 30px;
             position: absolute;
             top: 10px;
-            right: -0px;
+            right: -60px;
             padding-left: 15px;
     }
     .game{
