@@ -1,3 +1,5 @@
+
+let matches = 0;
 const emojis = ['❤️','❤️','😊','😊','🥳','🥳','😉','😉','😎','😎','😂','😂','😍','😍','👍','👍'];
 
 var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
@@ -17,8 +19,11 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
                         document.querySelectorAll(".boxOpen")[1].classList.remove("boxOpen");
                         document.querySelectorAll(".boxOpen")[0].classList.remove("boxOpen");
 
-                        if(document.querySelectorAll(".boxOpen").length() === emojis.length()){
-                            alert('Hurray! You won the game')
+                        matches++;
+
+                        if(matches === emojis.length/2){
+                           
+                            location.href = 'Win_page.html';
                         }
 
                     }
@@ -30,8 +35,26 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
             },500)
         }
 
-
-
+        
+        
+        
+        
+        const currentLevel = 1;
+        // Set Timer
+        let seconds = 60
+        let timer = setInterval(()=>{
+            seconds--;
+            document.getElementById("timer").textContent = seconds;
+            if(document.querySelectorAll(".boxOpen").length === emojis.length){
+                localStorage.setItem('currentLevel', currentLevel)
+                    location.href = 'Win_page.html'
+            }
+            if(seconds == 0 ){
+                location.href = 'Lose_page.html';
+        
+            }
+        },1000)
+        
         document.querySelector(".game").appendChild(box);
 
     }

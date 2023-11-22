@@ -13,11 +13,12 @@
     .instructions{
         border-radius: 18px;
         text-align: center;
-        font-size: 17px;
+        font-size: 15px;
         padding: 6px 6px;
         color: white;
-        width: 600px;
-       margin-left: 445px;
+        height: 500px;
+        width: 500px;
+       margin-left: 495px;
        background-color: #A57DF9;
        
        letter-spacing: 0.1em;
@@ -33,8 +34,8 @@
         width: 150px;
         border: none;
         box-shadow:4px 3px 4px 2px rgba(0, 0, 0, 0.4);
-        margin-left: 680px;
-        margin-top: 30px;
+        margin-left: -20px;
+        margin-top: 45px;
         cursor: pointer;
     }
     .Start:hover{
@@ -43,70 +44,85 @@
         background-color: #A57DF9;
         
     }
-    @media only screen and(max-width:900px) {
-        body{
-        font-family: monospace;
-        background-color: #984BF9;
-    }
-        .instructions{
-            border-radius: 18px;
-            text-align: center;
-            font-size: 17px;
-            padding: 6px 6px;
-            color: white;
-            width: 700px;
-            background-color: #A57DF9;
-            position: absolute;
-            right: -100px;
+    @media all and (min-width:300px) and (max-width:850px) {
+       
+    .instructions{
+       width: 1000px;
+       height: 1850px;
+       font-size: 80px;
+       position: absolute;
+      margin-left:10px;
+      margin-right: 20px;
+     top: 140px;
+  
        
     }
+    h1{
+        font-size: 100px;
+
+    }
+    h2{
+        font-size: 80px;
+    }
+    h3{
+        font-size: 50px;
+    }
     .Start{
-        font-family: monospace;
-        color: white;
-        font-size: 25px;
-        background-color: #6D4FAD;
-        border-radius: 20px;
-        padding: 5px;
-        width: 150px;
-        border: none;
-        box-shadow:4px 3px 4px 2px rgba(0, 0, 0, 0.4);
-        margin-left: 90px;
-        margin-top: 70px;
-        cursor: pointer;
+        font-size: 100px ;
+        width: 400px;
+        position: absolute;
+        top: 1850px;
+        right: 300px;
     }
-    .Start:hover{
-        
-        box-shadow:4px 3px 4px 2px rgba(0, 0, 0, 0.4);
-        background-color: #A57DF9;
-        
+    img{
+       position: absolute;
+       right: -400px;
+       top: 20px;
     }
     }
+    
 </style>
-
-
+    
 <body>
-    <h2><img style="margin-left: 480px; border-radius: 20px;" width="550px" src="Logo.png" alt="logo"></h2>
+    
+    <h2><img class="image" style="margin-left: 480px; border-radius: 20px;" width="550px" src="Logo.png" alt="logo"></h2>
     <div class="instructions">
-        
-        <p> <h1 >Instructions!</h1><br>Hey  Players,<br>
+       
+        <p> <h1 >Instructions!</h1><h3><br>Hey  Players,<br>
             The objective of the game is to make all cards pairs. 
-            <br>
+            <br></h3>
              <h2 >How to Play:</h2><br>
-            Click a card to reveal its symbol.
+           <h3> Click a card to reveal its symbol.
             <br>
             Click a second card to find a match.
             <br>
             Match all pairs to win.
-            <br>
+            <br></h3>
             
             <h2 >Tips!</h2>
             
-            Remember card positions.
+           <h3> Remember card positions.
             <br>
-            Aim for fewer moves for a higher score.
+            Aim for fewer moves for a higher score.</h3>
                  
              <h2 >Have Fun!</h2></p>
-    </div>
-    <button class="Start">START</button>
+    
+    <button class="Start" id="Start">START</button>
+
+</div>
 </body>
+<script>
+    const startButton = document.getElementById("Start");
+    document.getElementById("Start").addEventListener('click', function(){
+        window.location.href = 'enterName.html'
+    })
+
+
+
+
+
+
+
+</script>
+
 </html>

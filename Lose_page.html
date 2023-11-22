@@ -41,7 +41,7 @@
     .home{
     background-color: #6D4FAD;
     width: 180px;
-    height: px;
+    
     color: white;
     border-radius: 20px;
     text-align: center;
@@ -62,20 +62,48 @@
     .cont{
         margin-top: 130px;
     }
+    @media only screen and (max-width:900px) {
+       .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+       .playAgain{
+        margin-right: 650px;
+       }
+       .home{
+        margin-right: 650px;
+       }
+        
+    }
 </style>
 <body><div class="cont">
     <div class="remark">
         Oops!😓 <br><br>
-        Looks like the game got the <br><br> better of you this time.
+        You not Completed Level:<span id="level">1</span> 
         
     </div>
     
-    <div class="playAgain">
+    <div class="playAgain" id="PlayAgain">
         PLay Again
     </div>
-    <div class="home"> 
+    <div class="home" id="home"> 
          Home page
     </div>
 </div>
 </body>
+<script>
+
+const NoOfLevel = document.getElementById("level").innerHTML;
+const playAgainButton = document.getElementById("PlayAgain");
+playAgainButton.addEventListener('click', function(){
+    window.location.href = `Level${parseInt(NoOfLevel)}.html`;
+})
+
+const HomeButton = document.getElementById("home");
+HomeButton.addEventListener('click', function(){
+    window.location.href = 'instructions.html';
+})
+</script>
 </html>

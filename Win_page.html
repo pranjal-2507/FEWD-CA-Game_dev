@@ -12,14 +12,15 @@
     }
     .remark{
         font-size: 35px;
+       
         text-align: center;
         color: white;
-        margin-top: 50px;
+        margin-top: 100px;
     }
     .next{
         background-color: #6D4FAD;
     width: 180px;
-    height: px;
+   
     color: white;
     border-radius: 20px;
     text-align: center;
@@ -61,7 +62,6 @@
     .home{
     background-color: #6D4FAD;
     width: 180px;
-    height: px;
     color: white;
     border-radius: 20px;
     text-align: center;
@@ -79,22 +79,88 @@
         background-color: #bfa5fa;
         color: black;
     }
+    @media only screen and (max-width:900px){
+       .cont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+       .remark{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+       }
+       .next{
+        margin-top: 200px;
+        margin-right: 650px;
+       }
+       .playAgain{
+        margin-right: 650px;
+        margin-top: 50px;
+       }
+       .home{
+        margin-top: 50px;
+        margin-right: 650px;
+       }
+    }
 </style>
 
-<body>
+<body><div class="cont">
     <div class="remark">
         Congratulations!🥳
         <br><br>
-        You Completed <span>Level:1</span> Successfully!
+        You Completed Level:<span id="level">1</span> Successfully!
     </div>
-    <div class="next">
+    <div class="next" id="next">
         Next Level➡️
     </div>
-    <div class="playAgain">
+    <div class="playAgain" id="playAgain">
         PLay Again
     </div>
-    <div class="home"> 
+    <div class="home" id="home"> 
          Home page
     </div>
+</div>
 </body>
+<script>
+// const NoOfLevel = document.getElementById("level").innerText;
+
+document.getElementById("level").innerHTML = localStorage.getItem('currentLevel');
+
+
+const nextButton = document.getElementById("next");
+nextButton.addEventListener('click', function () {
+   
+    const nextLevel = parseInt(localStorage.getItem('currentLevel')) + 1;
+
+   
+    window.location.href = `Level${nextLevel}.html`;
+});
+
+const playAgainButton = document.getElementById("playAgain");
+playAgainButton.addEventListener('click', function () {
+    // Redirect to the first level page
+    window.location.href = 'Level1.html';
+});
+// const nextButton = document.getElementById("next");
+// nextButton.addEventListener('click',function(){
+//     window.location.href = `Level${parseInt(NoOfLevel)+1}.html`
+// })
+
+// const playAgainButton = document.getElementById("playAgain");
+// playAgainButton.addEventListener('click', function(){
+//     window.location.href = 'Level1.html';
+// })
+
+const homeButton = document.getElementById("home");
+homeButton.addEventListener('click',function(){
+    window.location.href = 'instructions.html';
+})
+
+
+
+</script>
 </html>
