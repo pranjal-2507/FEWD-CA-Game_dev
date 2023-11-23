@@ -6,6 +6,8 @@
 }
 
 body{
+    background-image: url("gameBg.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,13 +16,14 @@ body{
 }
 
 .container{
+    
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: #A57DF9;
+    background-color: #A57BBB;
     padding: 40px 60px;
 }
 

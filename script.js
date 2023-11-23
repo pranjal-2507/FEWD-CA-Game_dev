@@ -1,4 +1,6 @@
 
+
+
 let matches = 0;
 var currentLevel = 1;
 const emojis = ['❤️','❤️','😊','😊','🥳','🥳','😉','😉','😎','😎','😂','😂','😍','😍','👍','👍'];
@@ -14,6 +16,9 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
             setTimeout(function(){
                 if(document.querySelectorAll('.boxOpen').length > 1){
                     if(document.querySelectorAll(".boxOpen")[0].innerHTML == document.querySelectorAll(".boxOpen")[1].innerHTML){
+                        var CardMatch = new Audio("./cardMatchNew.wav");
+                        CardMatch.play();
+
                         document.querySelectorAll(".boxOpen")[0].classList.add("boxMatch");
                         document.querySelectorAll(".boxOpen")[1].classList.add("boxMatch");
                         
@@ -35,10 +40,6 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
                 }
             },500)
         }
-
-        
-        
-        
         
         const currentLevel = 1;
         // Set Timer
@@ -51,6 +52,7 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
                     location.href = 'Win_page.html'
             }
             if(seconds == 0 ){
+                localStorage.setItem('currentLevel', currentLevel)
                 location.href = 'Lose_page.html';
         
             }
@@ -59,3 +61,4 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
         document.querySelector(".game").appendChild(box);
 
     }
+    

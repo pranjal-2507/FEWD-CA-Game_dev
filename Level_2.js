@@ -13,6 +13,9 @@ for(let i=0;i<emojis.length;i++){
         setTimeout(function(){
             if(document.querySelectorAll('.boxOpen').length > 1){
                 if(document.querySelectorAll(".boxOpen")[0].innerHTML == document.querySelectorAll(".boxOpen")[1].innerHTML){
+                    var CardMatch = new Audio("./cardMatchNew.wav");
+                    CardMatch.play();
+
                     document.querySelectorAll(".boxOpen")[0].classList.add("boxMatch");
                         document.querySelectorAll(".boxOpen")[1].classList.add("boxMatch");
                         
@@ -36,7 +39,7 @@ for(let i=0;i<emojis.length;i++){
 
    
     // Set Timer
-    let seconds = 100
+    let seconds = 70
     let timer = setInterval(()=>{
         seconds--;
         document.getElementById("timer").textContent = seconds;
@@ -45,6 +48,7 @@ for(let i=0;i<emojis.length;i++){
                 location.href = 'Win_page.html'
         }
         if(seconds == 0 ){
+            localStorage.setItem('currentLevel', currentLevel)
             location.href = 'Lose_page.html';
     
         }

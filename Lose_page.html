@@ -7,13 +7,19 @@
 </head>
 <style>
     body{
+        background-image: url("gameBgBlur.jpg");
+        
+        background-size: cover;
         font-family: monospace;
         background-color: #984BF9;
+       
     }
     .remark{
+       
         font-size: 35px;
         text-align: center;
-        color: white;
+        color: black;
+        font-weight: bolder;
         margin-top: 50px;
     }
     
@@ -81,11 +87,11 @@
 <body><div class="cont">
     <div class="remark">
         Oops!😓 <br><br>
-        You not Completed Level:<span id="level">1</span> 
+        You lose Level:<span id="level">1</span> 
         
     </div>
     
-    <div class="playAgain" id="PlayAgain">
+    <div class="playAgain" id="playAgain">
         PLay Again
     </div>
     <div class="home" id="home"> 
@@ -96,10 +102,13 @@
 <script>
 
 const NoOfLevel = document.getElementById("level").innerHTML;
-const playAgainButton = document.getElementById("PlayAgain");
-playAgainButton.addEventListener('click', function(){
-    window.location.href = `Level${parseInt(NoOfLevel)}.html`;
-})
+document.getElementById("level").innerHTML = localStorage.getItem('currentLevel');
+
+const playAgainButton = document.getElementById("playAgain");
+playAgainButton.addEventListener('click', function () {
+    
+    window.location.href = `Level${parseInt(localStorage.getItem('currentLevel'))}.html`;
+});
 
 const HomeButton = document.getElementById("home");
 HomeButton.addEventListener('click', function(){

@@ -7,14 +7,18 @@
 </head>
 <style>
     body{
+        background-image: url("gameBgBlur.jpg");
+    
+        background-size: cover;
+        
         font-family: monospace;
         background-color: #984BF9;
     }
     .remark{
         font-size: 35px;
-       
         text-align: center;
-        color: white;
+        color: black;
+        font-weight: bolder;
         margin-top: 100px;
     }
     .next{
@@ -110,7 +114,7 @@
 
 <body><div class="cont">
     <div class="remark">
-        Congratulations!🥳
+        Congratulations <span id="NickName"></span>!🥳
         <br><br>
         You Completed Level:<span id="level">1</span> Successfully!
     </div>
@@ -126,9 +130,12 @@
 </div>
 </body>
 <script>
-const NoOfLevel = document.getElementById("level").innerText;
+ document.getElementById("NickName").innerHTML = localStorage.getItem('Nickname') ;
 
+
+const NoOfLevel = document.getElementById("level").innerText;
 document.getElementById("level").innerHTML = localStorage.getItem('currentLevel');
+
 
 
 const nextButton = document.getElementById("next");
