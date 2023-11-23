@@ -155,11 +155,13 @@ h2{
         align-items: center;
         
     }
-    
+    img{
+        margin-left:50px ;
+    }
     .container{
         margin-top: 100px;
         position: relative;
-        
+        margin-left: 90px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -213,13 +215,14 @@ h2{
             padding-left: 15px;
     }
     .time{
+        position: relative;
         
             width: 200px;
-            margin-left: 690px;
+            /* margin-left: 790px; */
             margin-top: 30px;
             position: absolute;
             top: 10px;
-            right: -60px;
+            right: -125px;
             padding-left: 15px;
     }
     .game{

@@ -1,4 +1,5 @@
 let matches =0;
+var currentLevel = 3;
 const emojis = ['🎈','🎈','🎁','🎁','👑','👑','⚽','⚽','🎖️','🎖️','💡','💡','📒','📒','⏰','⏰','🌼','🌼','🚲','🚲','🚩','🚩','🏠','🏠','🌈','🌈','💙','💙','❓','❓'];
 var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
 
@@ -19,6 +20,7 @@ var shuf_emoji = emojis.sort(()=> (Math.random() > .5) ? 2 : -1);
                         matches++;
 
                         if(matches == emojis.length/2){
+                            localStorage.setItem('currentLevel', currentLevel)
                           location.href = 'Win_page.html';
                         }
 

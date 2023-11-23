@@ -1,6 +1,6 @@
 
 let matches = 0;
-
+var currentLevel = 2;
 const emojis = ["😀","😀","🥳","🥳","➡️","➡️","🤔","🤔","😍","😍","😓","😓","❤️","❤️","👌","👌","🤖","🤖","🐋","🐋"];
 
 var shuf_emoji = emojis.sort(()=>(Math.random() > .5) ? 2 : -1);
@@ -21,7 +21,8 @@ for(let i=0;i<emojis.length;i++){
                         matches++;
                         
                         if(matches == emojis.length/2){
-                           window.location.href = 'Win_page.html'
+                            localStorage.setItem('currentLevel', currentLevel)
+                            window.location.href = 'Win_page.html'
                         }
                 }
                 else{
@@ -33,7 +34,7 @@ for(let i=0;i<emojis.length;i++){
         },500)
     }
 
-    var currentLevel = 2;
+   
     // Set Timer
     let seconds = 100
     let timer = setInterval(()=>{

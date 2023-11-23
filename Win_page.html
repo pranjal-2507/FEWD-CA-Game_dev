@@ -126,7 +126,7 @@
 </div>
 </body>
 <script>
-// const NoOfLevel = document.getElementById("level").innerText;
+const NoOfLevel = document.getElementById("level").innerText;
 
 document.getElementById("level").innerHTML = localStorage.getItem('currentLevel');
 
@@ -142,8 +142,8 @@ nextButton.addEventListener('click', function () {
 
 const playAgainButton = document.getElementById("playAgain");
 playAgainButton.addEventListener('click', function () {
-    // Redirect to the first level page
-    window.location.href = 'Level1.html';
+    
+    window.location.href = `Level${parseInt(localStorage.getItem('currentLevel'))}.html`;
 });
 // const nextButton = document.getElementById("next");
 // nextButton.addEventListener('click',function(){
