@@ -81,7 +81,7 @@ for (let i = 0; i < emojis.length; i++) {
 
   // Set Timer
   const currentLevel = 3;
-  let seconds = 100;
+  let seconds = 70;
   localStorage.setItem("initialsec",seconds)
 
   let timer = setInterval(() => {
