@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Result</title>
   </head>
-  
+
   <style>
     body {
       background-image: url("gameBgBlur.jpg");
@@ -67,6 +67,10 @@
     .cont {
       margin-top: 130px;
     }
+    #losePhrase{
+        font-size: 35px;
+        color: black;
+    }
     @media only screen and (max-width: 900px) {
       .cont {
         display: flex;
@@ -86,8 +90,9 @@
   <body>
     <div class="cont">
       <div class="remark">
-        Oops!😓 <br /><br />
+        <span id="losePhrase"></span><br /><br />
         You lose Level:<span id="level">1</span>
+        
       </div>
 
       <div class="playAgain" id="playAgain">PLay Again</div>
@@ -96,6 +101,10 @@
   </body>
 
   <script>
+    const losePhrase = document.getElementById("losePhrase")
+    const randomLosePhrases = ["Better Luck Next Time😞","Oops Try Again😓", "Game Over. Try again🥲"];
+    losePhrase.innerHTML=randomLosePhrases[Math.floor(Math.random()*randomLosePhrases.length)]
+    console.log(randomLosePhrases[Math.floor(Math.random()*randomLosePhrases.length)])
     const NoOfLevel = document.getElementById("level").innerHTML;
     document.getElementById("level").innerHTML =
       localStorage.getItem("currentLevel");

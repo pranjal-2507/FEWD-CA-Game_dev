@@ -71,18 +71,21 @@ for (let i = 0; i < emojis.length; i++) {
   // Set Timer
   const currentLevel = 3;
   let seconds = 70;
+  localStorage.setItem("initialsec",seconds)
+
   let timer = setInterval(() => {
     seconds--;
     document.getElementById("timer").textContent = seconds;
     if (document.querySelectorAll(".boxOpen").length === emojis.length) {
       localStorage.setItem("currentLevel", currentLevel);
-
+      localStorage.setItem("timeTaken",timeTaken);
       location.href = "Win_page.html";
     }
     if (seconds == 0) {
       localStorage.setItem("currentLevel", currentLevel);
       location.href = "Lose_page.html";
     }
+    localStorage.setItem("timesec",seconds)
   }, 1000);
 
   document.querySelector(".game").appendChild(box);

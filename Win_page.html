@@ -83,6 +83,12 @@
       background-color: #bfa5fa;
       color: black;
     }
+    .TimeTaken{
+        font-size: 25px;
+        margin-left: 650px;
+        padding-top: 40px;
+        color: black
+    }
     @media only screen and (max-width: 900px) {
       .cont {
         display: flex;
@@ -109,6 +115,12 @@
         margin-top: 50px;
         margin-right: 650px;
       }
+      .TimeTaken{
+        color: white;
+        position: absolute;
+        right: 60px;
+        width: 250px;
+      }
     }
   </style>
 
@@ -118,13 +130,17 @@
         Congratulations <span id="NickName"></span>!🥳 <br /><br />
         You Completed Level:<span id="level">1</span> Successfully!
       </div>
+      <div class="TimeTaken">Time Taken : <span id="timeTaken"></span></div>
       <div class="next" id="next">Next Level➡️</div>
       <div class="playAgain" id="playAgain">PLay Again</div>
       <div class="home" id="home">Home page</div>
     </div>
   </body>
-  
+
   <script>
+    
+    
+
     document.getElementById("NickName").innerHTML =
       localStorage.getItem("Nickname");
 
@@ -150,5 +166,9 @@
     homeButton.addEventListener("click", function () {
       window.location.href = "index.html";
     });
+    const playTime=localStorage.getItem("timesec");
+    var timeTaken = document.getElementById("timeTaken");
+    const initialSec=localStorage.getItem("initialsec")
+    timeTaken.innerHTML = initialSec-playTime;
   </script>
 </html>

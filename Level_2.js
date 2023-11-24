@@ -49,6 +49,7 @@ for (let i = 0; i < emojis.length; i++) {
           if (matches == emojis.length / 2) {
             localStorage.setItem("currentLevel", currentLevel);
             window.location.href = "Win_page.html";
+
           }
         } else {
           document.querySelectorAll(".boxOpen")[1].classList.remove("boxOpen");
@@ -60,17 +61,20 @@ for (let i = 0; i < emojis.length; i++) {
 
   // Set Timer
   let seconds = 70;
+  localStorage.setItem("initialsec",seconds)
   let timer = setInterval(() => {
     seconds--;
     document.getElementById("timer").textContent = seconds;
     if (document.querySelectorAll(".boxOpen").length === emojis.length) {
       localStorage.setItem("currentLevel", currentLevel);
+      localStorage.setItem("timeTaken",timeTaken);
       location.href = "Win_page.html";
     }
     if (seconds == 0) {
       localStorage.setItem("currentLevel", currentLevel);
       location.href = "Lose_page.html";
     }
+    localStorage.setItem("timesec",seconds)
   }, 1000);
   document.querySelector(".game").appendChild(box);
 }
