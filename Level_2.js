@@ -1,12 +1,11 @@
 // Declarations of variables
 let matches = 0;
 var currentLevel = 2;
-var currentLevel = 1;
+
 document.addEventListener('DOMContentLoaded' , function(){
   var audioContext = new Audio("./BgAudio2.mp3")
   audioContext.play();
   audioContext.loop = true;
-  
 })
 const emojis = [
   "😀",
