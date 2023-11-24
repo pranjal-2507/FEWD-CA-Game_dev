@@ -121,10 +121,6 @@
     <button class="Start" id="Start">START</button>
 
 </div>
-<audio id="autoplayAudio" muted autoplay>
-    <source src="./bgMusic.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-</audio>
 </body>
 <script>
 
@@ -133,22 +129,7 @@ const startButton = document.getElementById("Start");
         window.location.href = 'enterName.html'
     })
 
-    // document.addEventListener('DOMContentLoaded', function(){
-    //     var audioContext = new (window.AudioContext || window.webkitAudioContext)();
-    //     var audioElement = document.getElementById('autoplayAudio');
-    //     var audioSource = audioContext.createMediaElementSource(audioElement);
-
-    //     audioSource.connect(audioContext.destination);
-    //     audioElement.muted = true;
-    //     audioElement.play();
-    
-    // let bgAudio = new Audio('bgMusic.mp3');
-    // bgAudio.play();
-    // bgAudio.loop = true;
-    // })
-
     document.addEventListener('DOMContentLoaded' , function(){
-        console.log("hello")
         var audioContext = new Audio("./bgMusic.mp3")
         audioContext.play();
         audioContext.loop = true;
