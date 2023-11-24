@@ -185,7 +185,7 @@ input{
    
 .nickName{
     font-size: 40px;
-    color: white;
+    color: black;
     letter-spacing: 0.1em;
     margin-left: -60px;
     position: relative;
@@ -231,6 +231,12 @@ input{
 </div>
 </body>
 <script>
+document.addEventListener('DOMContentLoaded' , function(){
+        var audioContext = new Audio("./bgMusic.mp3")
+        audioContext.play();
+        audioContext.loop = true;
+        
+    })
 
 
 const beginButton = document.getElementById("LetsBegin");

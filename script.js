@@ -1,5 +1,13 @@
+// Declarations of variables
 let matches = 0;
 var currentLevel = 1;
+document.addEventListener('DOMContentLoaded' , function(){
+  var audioContext = new Audio("./BgAudio2.mp3")
+  audioContext.play();
+  audioContext.loop = true;
+  
+})
+
 const emojis = [
   "❤️",
   "❤️",
@@ -19,6 +27,7 @@ const emojis = [
   "👍",
 ];
 
+// Getting Random Emojis.
 var shuf_emoji = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
 
 for (let i = 0; i < emojis.length; i++) {
@@ -44,6 +53,7 @@ for (let i = 0; i < emojis.length; i++) {
 
           matches++;
 
+            // conditions for cards match.
           if (matches === emojis.length / 2) {
             localStorage.setItem("currentLevel", currentLevel);
             location.href = "Win_page.html";
@@ -58,7 +68,7 @@ for (let i = 0; i < emojis.length; i++) {
 
   const currentLevel = 1;
   // Set Timer
-  let seconds = 5;
+  let seconds = 60;
   localStorage.setItem("initialsec",seconds)
   console.log(seconds)
   let timer = setInterval(() => {

@@ -1,3 +1,4 @@
+// Declarations of variables
 let matches = 0;
 var currentLevel = 2;
 const emojis = [
@@ -23,6 +24,7 @@ const emojis = [
   "🐋",
 ];
 
+// Getting Random Emojis.
 var shuf_emoji = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
 for (let i = 0; i < emojis.length; i++) {
   let box = document.createElement("div");
@@ -45,6 +47,8 @@ for (let i = 0; i < emojis.length; i++) {
           document.querySelectorAll(".boxOpen")[1].classList.remove("boxOpen");
           document.querySelectorAll(".boxOpen")[0].classList.remove("boxOpen");
           matches++;
+
+          // conditions for cards match.
 
           if (matches == emojis.length / 2) {
             localStorage.setItem("currentLevel", currentLevel);

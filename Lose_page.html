@@ -91,7 +91,7 @@
     <div class="cont">
       <div class="remark">
         <span id="losePhrase"></span><br /><br />
-        You lose Level:<span id="level">1</span>
+        You lost Level:<span id="level">1</span>
         
       </div>
 
@@ -101,6 +101,13 @@
   </body>
 
   <script>
+document.addEventListener('DOMContentLoaded' , function(){
+        var audioContext = new Audio("./loseAudio.wav")
+        audioContext.play();
+        audioContext.loop = false;
+        
+    })
+
     const losePhrase = document.getElementById("losePhrase")
     const randomLosePhrases = ["Better Luck Next Time😞","Oops Try Again😓", "Game Over. Try again🥲"];
     losePhrase.innerHTML=randomLosePhrases[Math.floor(Math.random()*randomLosePhrases.length)]
