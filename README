@@ -8,8 +8,8 @@ Syncro Minds isn't just a game; it's a mind-bending adventure that invites playe
 # The reference been used are as followed:
 Youtube memory game video - https://youtu.be/M0egyNvsN-Y?si=T1xm_Dbe5BQM7LoY
 
-
-In the following game, I have used local storage to store the name and nickname of the player instead of js objects.
+sss
+In the following game, I have used local storage to store the nme and nickname of the player instead of js objects.
 And as the game doesn't consist scores of the player so I have user local storage to store the time taken by the player too complete that particular level and display it on the score page according to mentioned in the FEWD CA-2 second mandatory features.
 
 # MEMORY CARD GAME - SYNCRO MIND
@@ -27,6 +27,7 @@ The second page is for getting the player's name and nickname.
 ![Enter Name and nickname](readmeimgs/Screenshot%202023-11-25%20091048.png)
 
 Now the game begins with Level:1 and continues to move on to Level 2 and Level 3 respectively.
+
 ![Level 1](readmeimgs/Screenshot%202023-11-25%20091122.png)
 ![Level 2](readmeimgs/Screenshot%202023-11-25%20091156.png)
 ![Level3](readmeimgs/Screenshot%202023-11-25%20091218.png)
@@ -43,3 +44,4 @@ If the player loses the game, the lose page will be displayed with random lose p
 2. CSS
 3. Javascript
 
+![Alt text](<Screenshot 2023-11-25 091048.png>)
