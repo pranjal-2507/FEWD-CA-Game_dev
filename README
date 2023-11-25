@@ -13,8 +13,9 @@ In the following game, I have used local storage to store the name and nickname 
 And as the game doesn't consist scores of the player so I have user local storage to store the time taken by the player too complete that particular level and display it on the score page according to mentioned in the FEWD CA-2 second mandatory features.
 
 # Game Play Explained :
+![Alt text](<Screenshot 2023-11-25 091027.png>)
 This is the Starting Page of the game Where the player can start the game by reading the instructions.
-![Starting Game page](<Screenshot 2023-11-25 091027.png>)
+
 
 The second page is for getting player's name and nickname.
 ![Enter Name and nickname](<Screenshot 2023-11-25 091048.png>)
