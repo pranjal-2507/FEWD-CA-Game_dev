@@ -18,25 +18,17 @@ Embark on an exhilarating journey of mental synergy with Syncro Minds🥳, the m
 
 Syncro Minds isn't just a game; it's a mind-bending adventure that invites players to explore the depths of their cognitive prowess. With each flip of a card, unveil a tapestry of images and shapes that will push your memory to its limits👍. As you progress, the game evolves, introducing twists and turns that keep you on the edge of your seat.
 
-## Game Play Explained :
-![Alt text](./readmeimgs/Screenshot%202023-11-25%20091027.png)
+## Game Play Explained 
 
-This is the Starting Page of the game where the player can start the game by reading the instructions.
+From the Starting Page of the game where the player can start the game by reading the instructions.
 
 The second page is for getting the player's name and nickname.
-![Enter Name and nickname](readmeimgs/Screenshot%202023-11-25%20091048.png)
-
-Now the game begins with Level:1 and continues to move on to Level 2 and Level 3 respectively.
-
-![Level 1](readmeimgs/Screenshot%202023-11-25%20091122.png)
-![Level 2](readmeimgs/Screenshot%202023-11-25%20091156.png)
-![Level3](readmeimgs/Screenshot%202023-11-25%20091218.png)
+Then the game begins with Level:1 and continues to move on to Level 2 and Level 3 respectively.
 
 If the player wins the level, the win page will be displayed with random win phrases.
-![Win page](readmeimgs/Screenshot%202023-11-25%20091307.png)
 
 If the player loses the game, the lose page will be displayed with random lose phrases.
-![Lose page](readmeimgs/Screenshot%202023-11-25%20091334.png)
+
 
 
 # The textStack used in the game are:
@@ -44,4 +36,3 @@ If the player loses the game, the lose page will be displayed with random lose p
 2. CSS
 3. Javascript
 
-![Alt text](<Screenshot 2023-11-25 091048.png>)
