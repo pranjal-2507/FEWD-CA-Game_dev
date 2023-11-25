@@ -12,23 +12,27 @@ Youtube memory game video - https://youtu.be/M0egyNvsN-Y?si=T1xm_Dbe5BQM7LoY
 In the following game, I have used local storage to store the name and nickname of the player instead of js objects.
 And as the game doesn't consist scores of the player so I have user local storage to store the time taken by the player too complete that particular level and display it on the score page according to mentioned in the FEWD CA-2 second mandatory features.
 
-# Game Play Explained :
-![Alt text](<readmeimgs/Screenshot 2023-11-25 091027.png>)
+# MEMORY CARD GAME - SYNCRO MIND
 
-This is the Starting Page of the game Where the player can start the game by reading the instructions.
+Embark on an exhilarating journey of mental synergy with Syncro Minds🥳, the memory card game that transcends ordinary challenges. Immerse yourself in a captivating realm where memory meets strategy, as you unveil the art of synchronization. Unleash the power of your mind by pairing vibrant cards that mirror each other🤔, testing not only your recollection skills but also your ability to forge connections between seemingly disparate elements.
 
+Syncro Minds isn't just a game; it's a mind-bending adventure that invites players to explore the depths of their cognitive prowess. With each flip of a card, unveil a tapestry of images and shapes that will push your memory to its limits👍. As you progress, the game evolves, introducing twists and turns that keep you on the edge of your seat.
 
-The second page is for getting player's name and nickname.
-![Enter Name and nickname](<Screenshot 2023-11-25 091048.png>)
+## Game Play Explained :
+![Starting Page](readmeimgs/Screenshot%202023-11-25%20091027.png)
 
-Now the Game begins with Level:1 and continue to move on Level 2 and Level 3 respectively.
+This is the Starting Page of the game where the player can start the game by reading the instructions.
 
-![Level 1](<Screenshot 2023-11-25 091122.png>)
-![Level 2](<Screenshot 2023-11-25 091156.png>)
-![Level3 ](<Screenshot 2023-11-25 091218.png>)
+The second page is for getting the player's name and nickname.
+![Enter Name and nickname](readmeimgs/Screenshot%202023-11-25%20091048.png)
 
-If the player Wins the Level the win page will be displayed, with random win phrases.
-![win page](<Screenshot 2023-11-25 091307.png>)
+Now the game begins with Level:1 and continues to move on to Level 2 and Level 3 respectively.
+![Level 1](readmeimgs/Screenshot%202023-11-25%20091122.png)
+![Level 2](readmeimgs/Screenshot%202023-11-25%20091156.png)
+![Level3](readmeimgs/Screenshot%202023-11-25%20091218.png)
 
-If the player loses the game the lose page will be displayed with random lose phrases.
-![Lose page](<Screenshot 2023-11-25 091334.png>)
+If the player wins the level, the win page will be displayed with random win phrases.
+![Win page](readmeimgs/Screenshot%202023-11-25%20091307.png)
+
+If the player loses the game, the lose page will be displayed with random lose phrases.
+![Lose page](readmeimgs/Screenshot%202023-11-25%20091334.png)
