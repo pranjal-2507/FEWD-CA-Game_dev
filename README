@@ -1,13 +1,32 @@
-MEMORY CARD GAME - SYNCRO MIND
+# MEMORY CARD GAME - SYNCRO MIND
 
 Embark on an exhilarating journey of mental synergy with Syncro Minds🥳, the memory card game that transcends ordinary challenges. Immerse yourself in a captivating realm where memory meets strategy, as you unveil the art of synchronization. Unleash the power of your mind by pairing vibrant cards that mirror each other🤔, testing not only your recollection skills but also your ability to forge connections between seemingly disparate elements.
 
 Syncro Minds isn't just a game; it's a mind-bending adventure that invites players to explore the depths of their cognitive prowess. With each flip of a card, unveil a tapestry of images and shapes that will push your memory to its limits👍. As you progress, the game evolves, introducing twists and turns that keep you on the edge of your seat.
 
 
-The reference been used are as followed:
+# The reference been used are as followed:
 Youtube memory game video - https://youtu.be/M0egyNvsN-Y?si=T1xm_Dbe5BQM7LoY
 
 
 In the following game, I have used local storage to store the name and nickname of the player instead of js objects.
 And as the game doesn't consist scores of the player so I have user local storage to store the time taken by the player too complete that particular level and display it on the score page according to mentioned in the FEWD CA-2 second mandatory features.
+
+# Game Play Explained :
+This is the Starting Page of the game Where the player can start the game by reading the instructions.
+![Starting Game page](<Screenshot 2023-11-25 091027.png>)
+
+The second page is for getting player's name and nickname.
+![Enter Name and nickname](<Screenshot 2023-11-25 091048.png>)
+
+Now the Game begins with Level:1 and continue to move on Level 2 and Level 3 respectively.
+
+![Level 1](<Screenshot 2023-11-25 091122.png>)
+![Level 2](<Screenshot 2023-11-25 091156.png>)
+![Level3 ](<Screenshot 2023-11-25 091218.png>)
+
+If the player Wins the Level the win page will be displayed, with random win phrases.
+![win page](<Screenshot 2023-11-25 091307.png>)
+
+If the player loses the game the lose page will be displayed with random lose phrases.
+![Lose page](<Screenshot 2023-11-25 091334.png>)
