@@ -36,3 +36,10 @@ If the player wins the level, the win page will be displayed with random win phr
 
 If the player loses the game, the lose page will be displayed with random lose phrases.
 ![Lose page](readmeimgs/Screenshot%202023-11-25%20091334.png)
+
+
+# The textStack used in the game are:
+1. HTML
+2. CSS
+3. Javascript
+
