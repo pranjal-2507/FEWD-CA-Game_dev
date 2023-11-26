@@ -54,6 +54,7 @@ for (let i = 0; i < emojis.length; i++) {
           document.querySelectorAll(".boxOpen")[0].classList.remove("boxOpen");
           matches++;
 
+
           // conditions for cards match.
 
           if (matches == emojis.length / 2) {
