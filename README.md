@@ -36,10 +36,10 @@ Syncro Mind is built using a simple yet powerful tech stack:
 
 ### 📌 Key Features
 
-- ✅ Local Storage Integration – Stores player name, nickname, and time taken to complete levels
-- ✅ Progress Tracking – Automatically saves completion time and displays results
-- ✅ Responsive Design – Optimized for smooth gameplay (zoom out if needed for better visibility)
-- ✅ Random Win/Loss Messages – Keeps the game engaging with dynamic feedback
+- Local Storage Integration – Stores player name, nickname, and time taken to complete levels
+- Progress Tracking – Automatically saves completion time and displays results
+- Responsive Design – Optimized for smooth gameplay (zoom out if needed for better visibility)
+- Random Win/Loss Messages – Keeps the game engaging with dynamic feedback
 
 ---
 ### 📖 Instructions to Play
