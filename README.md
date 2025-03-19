@@ -31,6 +31,9 @@ Syncro Mind is built using a simple yet powerful tech stack:
 - JavaScript – Handling game logic, animations, and interactions
   
 ---
+![Screenshot 2023-11-25 091027](https://github.com/user-attachments/assets/ff9d2477-8167-4b21-b71a-8c51b524eb52)
+
+
 ### 📌 Key Features
 
 - ✅ Local Storage Integration – Stores player name, nickname, and time taken to complete levels
