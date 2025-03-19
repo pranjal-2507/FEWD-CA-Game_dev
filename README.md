@@ -10,14 +10,14 @@ As you progress through the levels, expect exciting twists and surprises that wi
 
 ### 🕹️ Gameplay Mechanics
 
-  1️⃣ Starting the Game
+ - 1️⃣ Starting the Game
 Begin at the Welcome Page, where you can read the game instructions before diving in.
-  2️⃣ Enter Player Details
+-  2️⃣ Enter Player Details
 Players will be asked to enter their Name and Nickname to personalize their experience.
-  3️⃣ Levels & Progression
+-  3️⃣ Levels & Progression
 Level 1 → Level 2 → Level 3
 The game progressively gets more challenging as you advance!
-  4️⃣ Winning & Losing
+-  4️⃣ Winning & Losing
 If you successfully match all cards within the given time, you'll see a Victory Page with a random win phrase! 🎉
 If time runs out, you'll be directed to the Game Over Page, displaying a random lose phrase! 😞
 
